@@ -1,0 +1,30 @@
+		
+<html>
+<head>
+<title>
+Family Book
+</title>
+</head>
+<body>
+<h1 class="header">My Family Book</h1>
+<img id="album" src="Family animated.jfif">
+<button id="album" onclick=nextslide()>next image</button>
+<p id="name">1</p>
+<script>
+var images = ["Family animated.jfif","man.jfif","woman.jfif","sister&brother.jfif"];
+var names =[1,2,3,4];
+var i = 0;
+function nextslide(){
+if (i==3)  {
+     i=0;
+   }else
+     {
+       i++;
+     }
+         
+  document.getElementById("album").src = images[i];
+  document.getElementById("name").innerHTML = names[i];
+}
+</script>
+</body>
+</html>
